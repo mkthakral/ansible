@@ -1,4 +1,4 @@
-# Setup Ansible on Windows
+## Setup Ansible on Windows
 
 * Download Docker Desktop 
 * Pull a Linux container
@@ -11,7 +11,7 @@ ssh-keygen -t rsa -C your_email@example.com
 ```
 
 
-# Create AWS EC2 instance to be managed by Ansible
+## Create AWS EC2 instance to be managed by Ansible
 
 * Download "ppk" from Key value pair 
 * Open port SSH 22 & HTTP 80
@@ -20,32 +20,33 @@ ssh-keygen -t rsa -C your_email@example.com
 * Paste public key to EC2 /<user>/.ssh/authorized_keys
 
 
-# Test Connection from Ansible Container to EC2 
+## Test Connection from Ansible Container to EC2 
 
 ```
 ssh -i ~/.ssh/id_rsa <user>@ec2-host-or-ip
 ```
 
-# Setup Ansible Inventory & Playbook
+## Setup Ansible Inventory & Playbook
  
   Copy following files to /etc/ansible
   
   * my-hosts
   * my-playbook.yml
   
- # Test Playbook
+ ## Test Playbook
     
   ```
   ansible-playbook my-playbook.yml -i my-hosts --check
   ```
   
-  # Run Playbook
+  ## Run Playbook
   
   ```
   ansible-playbook my-playbook.yml -i my-hosts
   ```
   
-  # Test
+  ## Test
   
   * Open in browser: http://<ec2-public-ip>
+  * You should see welcome message 
    
