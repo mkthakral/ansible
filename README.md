@@ -31,18 +31,18 @@ ssh -i ~/.ssh/id_rsa my-user-on-ec2@ec2-host-or-ip
   Copy following files to /etc/ansible
   
   * my-hosts
-  * my-playbook.yml
+  * my-playbook-web-server-setup.yml
   
  ## Test Playbook
     
   ```
-  ansible-playbook my-playbook.yml -i my-hosts --check
+  ansible-playbook my-playbook-web-server-setup.yml -i my-hosts --check
   ```
   
   ## Run Playbook
   
   ```
-  ansible-playbook my-playbook.yml -i my-hosts
+  ansible-playbook my-playbook-web-server-setup.yml -i my-hosts
   ```
   
   ## Test
