@@ -1,0 +1,17 @@
+---
+- name: 1st Play
+  hosts: my_aws_ec2s
+  remote_user: root
+  tasks:
+  - name: install httpd
+    yum:
+     name: httpd
+     state: latest
+  - name: run httpd
+    service:
+     name: httpd
+     state: started
+  - name: create content
+    copy:
+     content: "welcome"
+     dest: /var/www/html/index.html
