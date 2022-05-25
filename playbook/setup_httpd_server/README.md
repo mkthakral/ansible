@@ -1,6 +1,6 @@
-## Create Linux User
+## Setup HTTPD Web server
 
-This playbook shall help create a Linux user on remote machines using ansible
+This playbook shall setup HTTPD web server and samle HTML file at root of the web server.
 
 ## Copy Playbook
 
