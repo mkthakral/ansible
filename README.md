@@ -26,27 +26,12 @@ ssh-keygen -t rsa -C your_email@example.com
 ssh -i ~/.ssh/id_rsa my-user-on-ec2@ec2-host-or-ip
 ```
 
-## Setup Ansible Inventory & Playbook
+## Setup Ansible Inventory
  
   Copy following files to /etc/ansible
   
   * my-hosts
-  * my-playbook-web-server-setup.yml
   
- ## Test Playbook
-    
-  ```
-  ansible-playbook my-playbook-web-server-setup.yml -i my-hosts --check
-  ```
-  
-  ## Run Playbook
-  
-  ```
-  ansible-playbook my-playbook-web-server-setup.yml -i my-hosts
-  ```
-  
-  ## Test
-  
-  * Open in browser: http://ec2-public-ip
-  * You should see welcome message 
-   
+## Next Steps
+
+Go to playbook directory and use required playbook
