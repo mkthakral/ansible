@@ -1,1 +1,10 @@
-a
+- name: Play create user
+  hosts: my_aws_ec2s
+  remote_user: root
+  tasks:
+  - name: create user tomcat
+    user:
+     name: tomcat
+     group: users
+     shell: /bin/bash
+     home: /home/tomcat
