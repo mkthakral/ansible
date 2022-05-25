@@ -15,16 +15,11 @@ Copy that playbook YAML to ansible control machine at
 
 ```
 cd /etc/ansible/
-ansible-playbook playbook_create_user.yml -i my-hosts
+ansible-playbook playbook-setup-httpd-server.yml -i my-hosts
 
 ```
 
 ## Test
 
-On remote machines, test
-
-```
-sudo su - tomcat
-```
-
-You should be able to switch to new user.
+ * Open in browser: http://ec2-public-ip
+ * You should see welcome message 
