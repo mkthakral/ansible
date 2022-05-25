@@ -15,7 +15,7 @@ Copy that playbook YAML to ansible control machine at
 
 ```
 cd /etc/ansible/
-ansible-playbook playbook_create_user.yml -i myhosts
+ansible-playbook playbook_create_user.yml -i my-hosts
 
 ```
 
