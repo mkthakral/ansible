@@ -1,0 +1,8 @@
+- name: play archive directory
+  hosts: my_aws_ec2s
+  remote_user: root
+  tasks:
+  - name: compress directory
+    archive:
+      path: /apps/tomcat
+      dest: /apps/tomcat.tar.gz
